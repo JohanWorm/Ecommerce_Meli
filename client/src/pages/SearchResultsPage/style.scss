@@ -1,0 +1,17 @@
+@import 'src/assets/styles/variables.scss';
+
+.search__results {
+    display           : grid;
+    grid-template-rows: $separator auto;
+    row-gap           : $separator;
+
+    &--list {
+        border-radius   : $radius;
+        background-color: $color__white;
+        box-sizing      : border-box;
+        padding         : $separator;
+        display         : grid;
+        gap             : $separator;
+        grid-auto-rows  : min-content;
+    }
+}

@@ -1,0 +1,41 @@
+@import 'src/assets/styles/variables.scss';
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background-color: $color__secondary--light;
+    margin          : 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left : 15px;
+    margin-right : auto;
+    margin-left  : auto;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

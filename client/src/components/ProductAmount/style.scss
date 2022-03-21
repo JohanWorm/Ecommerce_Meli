@@ -1,0 +1,12 @@
+@import 'src/assets/styles/variables.scss';
+
+.amount {
+    position: relative;
+
+    &__decimals {
+        position : absolute;
+        font-size: 23px;
+        top      : 6px;
+        right    : -26px;
+    }
+}

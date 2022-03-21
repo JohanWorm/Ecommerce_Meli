@@ -1,0 +1,17 @@
+@import 'src/assets/styles/variables.scss';
+
+.search__box {
+    flex-grow    : 1;
+    display      : flex;
+    height       : 100%;
+    border-radius: $radius;
+    overflow     : hidden;
+
+    input {
+        flex-grow: 1;
+        font-size: 18px;
+        outline  : none;
+        border   : none;
+        padding  : 0 20px
+    }
+}
