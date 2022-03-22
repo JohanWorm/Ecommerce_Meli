@@ -3,7 +3,7 @@ import './style.scss';
 
 const BreadCrumb = (props) => {
     return (
-        <li className="bread__crumb">
+        <li className="bread__crumb cursor-pointer">
             {props.name}
         </li>
     );

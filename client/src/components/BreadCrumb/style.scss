@@ -1,6 +1,5 @@
 .bread__crumb {
-    display: inline-block;
-    cursor : pointer;
+    display: inline;
 
     &:not(:first-child):before {
         margin-right: 8px;

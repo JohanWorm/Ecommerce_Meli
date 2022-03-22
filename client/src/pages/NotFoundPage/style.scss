@@ -1,6 +1,6 @@
 @import 'src/assets/styles/variables.scss';
 
-.home {
+.not__found {
     border-radius   : $radius;
     background-color: $color__white;
     box-sizing      : border-box;
@@ -10,14 +10,7 @@
     justify-content : center;
     align-items     : center;
 
-    &__title {
-        color      : $color__secondary--dark;
-        font-size  : 50px;
-        font-weight: 400;
-        margin     : 20px 0 0;
-    }
-
-    &__message {
+    &--message {
         color      : $color__secondary--medium;
         font-size  : 25px;
         font-weight: 400;

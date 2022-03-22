@@ -30,7 +30,7 @@ const SearchResults = () => {
                 }
             })
             .catch(error => {
-
+                console.log(error);
             })
     }
 
@@ -52,6 +52,7 @@ const SearchResults = () => {
                 {items.map((data, i) =>
                     <ProductItem key={i} data={data} categories={categories} />
                 )}
+                {!items.length && <h2 className='search__results--empty'>Sin resultados para tu búsqueda...</h2>}
             </div>
         </div>
     );

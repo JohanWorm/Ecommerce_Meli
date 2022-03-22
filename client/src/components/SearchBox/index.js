@@ -2,14 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { ButtonIcon } from 'src/components/ButtonIcon';
 import iconSearch from 'assets/images/ic_Search.png';
-import iconSearch2x from 'assets/images/ic_Search@2x.png.png.png';
 import './style.scss';
 
 const SearchBox = () => {
 
     let history = useHistory();
-    const location = useLocation().search;
-    const locationSearchValue = new URLSearchParams(location).get('search');
     const pathItems = 'items';
     const params = new URLSearchParams();
     const [searchValue, setSearchValue] = useState('');
@@ -28,9 +25,11 @@ const SearchBox = () => {
     };
 
     useEffect(() => {
-        if (locationSearchValue && locationSearchValue.trim() && locationSearchValue.trim().length) {
-            setSearchValue(locationSearchValue.trim());
-        }
+        // const location = useLocation().search;
+        // const locationSearchValue = new URLSearchParams(location).get('search');
+        // if (locationSearchValue && locationSearchValue.trim() && locationSearchValue.trim().length) {
+        //     setSearchValue(locationSearchValue.trim());
+        // }
     }, []);
 
     return (

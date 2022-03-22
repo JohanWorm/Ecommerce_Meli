@@ -6,7 +6,7 @@ const meliInstance = axios.create({
 });
 
 
-const getListItems = async (query, limit) => {
+const getListItems = async (query, limit, next) => {
     try {
         const responseApiMeli = await meliInstance.get(`${apiConfig.apiMeli.region}/search?q=${query}&limit=${limit}`);
         const response = {
@@ -26,11 +26,11 @@ const getListItems = async (query, limit) => {
         }
         return response;
     } catch (e) {
-        return e.message;
+        next(new Error(e.message));
     }
 };
 
-const getItemDetail = async (id) => {
+const getItemDetail = async (id, next) => {
     try {
         const [responseApiMeliId, responseApiMeliDescription] = await Promise.all([
             meliInstance.get(`items/${id}`),
@@ -45,7 +45,7 @@ const getItemDetail = async (id) => {
         }
         return response;
     } catch (e) {
-        return e.message;
+        next(new Error(e.message));
     }
 };
 
@@ -91,10 +91,10 @@ const _getCategoriesModel = (filters) => {
 }
 
 const _getShippingModel = (shipping) => {
-    if (shipping && !shipping.free_shipping) {
+    if (shipping && shipping.free_shipping !== null) {
         return shipping.free_shipping;
     }
-    return '';
+    return false;
 }
 
 const _getPriceModel = (dataItem, onlyDecimals) => {

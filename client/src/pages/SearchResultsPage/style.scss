@@ -14,4 +14,11 @@
         gap             : $separator;
         grid-auto-rows  : min-content;
     }
+
+    &--empty {
+        color      : $color__secondary--medium;
+        font-size  : 25px;
+        font-weight: 400;
+        text-align : center;
+    }
 }
