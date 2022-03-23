@@ -1,5 +1,5 @@
 const endpoints = {
-    items: 'items',
+  items: 'items',
 }
 
 export { endpoints };

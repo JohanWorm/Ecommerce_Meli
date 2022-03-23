@@ -6,16 +6,16 @@ import 'src/assets/styles/global.scss';
 import './style.scss';
 
 const Logo = () => {
-    
-    let history = useHistory();
 
-    const goToHome = () => {
-        history.push(`/`);
-    };
+  let history = useHistory();
 
-    return (
-        <img className="logo h-100" src={logo2x} alt="Logo" onClick={goToHome} />
-    );
+  const goToHome = () => {
+    history.push(`/`);
+  };
+
+  return (
+    <img className='logo h-100' src={logo2x} alt='Logo' onClick={goToHome} />
+  );
 }
 
 export { Logo };

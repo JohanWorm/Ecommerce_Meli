@@ -26,6 +26,8 @@
         @media (max-width: $breakpoint-tablet) {
             padding          : $separator;
             grid-auto-columns: 100%;
+            grid-auto-rows   : auto;
+            gap              : $separator;
         }
     }
 

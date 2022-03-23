@@ -3,13 +3,13 @@ import './style.scss';
 
 const Button = (props) => {
 
-    return (
-        <button
-            className='btn'
-            type={props.type}>
-            {props.title}
-        </button>
-    );
+  return (
+    <button
+      className='btn'
+      type={props.type}>
+      {props.title}
+    </button>
+  );
 }
 
 export { Button };

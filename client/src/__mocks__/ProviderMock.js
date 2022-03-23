@@ -12,4 +12,4 @@ const ProviderMock = props => (
   </Provider>
 );
 
-export default ProviderMock;
+export { ProviderMock };

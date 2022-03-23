@@ -1,0 +1,66 @@
+{
+    "author": {
+        "name": "Johan",
+        "lastname": "Cuberos"
+    },
+    "categories": [
+        "Hogar, Muebles y Jardín",
+        "Muebles para el Hogar",
+        "Camas, Bases y Respaldos",
+        "Camas"
+    ],
+    "items": [
+        {
+            "id": "MLA914464507",
+            "title": "Cama De Dos Plazas Con Respaldo Repisa Melamina 1,50m Ancho",
+            "price": {
+                "currency": "ARS",
+                "amount": "12889",
+                "decimals": "00"
+            },
+            "picture": "http://http2.mlstatic.com/D_758380-MLA48812232630_012022-O.jpg",
+            "condition": "new",
+            "free_shipping": false,
+            "city": "Hudson"
+        },
+        {
+            "id": "MLA618741486",
+            "title": "Cama Con Cajones Box . Base Somier  Con Cajonera !!",
+            "price": {
+                "currency": "ARS",
+                "amount": "31400",
+                "decimals": "00"
+            },
+            "picture": "http://http2.mlstatic.com/D_955217-MLA44051208430_112020-O.jpg",
+            "condition": "new",
+            "free_shipping": false,
+            "city": "Ituzaingó"
+        },
+        {
+            "id": "MLA836336803",
+            "title": "Cama Moderna Minimalista A Medida",
+            "price": {
+                "currency": "ARS",
+                "amount": "27900",
+                "decimals": "00"
+            },
+            "picture": "http://http2.mlstatic.com/D_989361-MLA41450872702_042020-O.jpg",
+            "condition": "new",
+            "free_shipping": false,
+            "city": "Buenos aires partido tres de febrero"
+        },
+        {
+            "id": "MLA914467556",
+            "title": "Cama De Una Plaza Con Respaldo Repisa Melamina 0,93 M Ancho",
+            "price": {
+                "currency": "ARS",
+                "amount": "8689",
+                "decimals": "00"
+            },
+            "picture": "http://http2.mlstatic.com/D_826528-MLA47214903169_082021-O.jpg",
+            "condition": "new",
+            "free_shipping": false,
+            "city": "Hudson"
+        }
+    ]
+}

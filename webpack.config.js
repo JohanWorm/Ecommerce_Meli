@@ -1,5 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -8,8 +10,8 @@ module.exports = {
     app: './index.js'
   },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: '/',
     filename: "meli.js"
   },
   module: {
@@ -45,5 +47,13 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, 'client/public')
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: '../public/index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
+  ],
 };
