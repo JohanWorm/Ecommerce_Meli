@@ -28,10 +28,7 @@ const SearchResults = () => {
             setItems(response.data.items);
           }
         }
-      })
-      .catch(error => {
-        console.log(error);
-      })
+      });
   }
 
   useEffect(() => {
